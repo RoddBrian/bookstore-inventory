@@ -33,21 +33,27 @@ To get started with the bookstore inventory system, follow these steps:
 
 5. **API Endpoints**
 
-    Add a Book
-    URL: POST /books
-    Description: Adds a new book to the inventory.
-    Body: JSON object with title, author, isbn, and quantity fields.
-    Example:
+    ## API Endpoints
+
+    ### Add a Book
+    - **URL**: `POST /books`
+    - **Description**: Adds a new book to the inventory.
+    - **Body**: JSON object with `title`, `author`, `isbn`, and `quantity` fields.
+    - **Example**:
+    ```json
     {
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "isbn": "9780743273565",
-    "quantity": 10
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "isbn": "9780743273565",
+        "quantity": 10
     }
-    Get All Books
-    URL: GET /books
-    Description: Retrieves all books in the inventory.
-    Response:
+    
+    
+    ### Get All Books
+    -**URL**: GET /books
+    -**Description**: Retrieves all books in the inventory.
+    -**Response**:
+    ```json
     [
     {
         "id": "1",
@@ -64,11 +70,13 @@ To get started with the bookstore inventory system, follow these steps:
         "quantity": 5
     }
     ]
-    Update a Book
-    URL: PUT /books/:id
-    Description: Updates a book's details identified by id.
-    Body: JSON object with fields to update (title, author, isbn, or quantity).
-    Example:
+
+    ### Update a Book
+    -**URL**: PUT /books/:id
+    -**Description**: Updates a book's details identified by id.
+    -**Body**: JSON object with fields to update (title, author, isbn, or quantity).
+    -**Example**:
+    ```json
     {
     "quantity": 7
     }

@@ -47,7 +47,7 @@ To get started with the bookstore inventory system, follow these steps:
         "isbn": "9780743273565",
         "quantity": 10
     }
-    
+    ```
     
     ### Get All Books
     -**URL**: GET /books
@@ -70,6 +70,7 @@ To get started with the bookstore inventory system, follow these steps:
         "quantity": 5
     }
     ]
+    ```
 
     ### Update a Book
     -**URL**: PUT /books/:id
@@ -80,6 +81,7 @@ To get started with the bookstore inventory system, follow these steps:
     {
     "quantity": 7
     }
+    ```
 
     Contributing
     Contributions are welcome! If you have any suggestions or found a bug, please open an issue or submit a pull request.

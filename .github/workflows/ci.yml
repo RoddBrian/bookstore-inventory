@@ -35,12 +35,12 @@ jobs:
       working-directory: src
 
     - name: Build Docker image
-      run: docker build -t <username>/bookstore-inventory .
+      run: docker build -t roddbrian/bookstore-inventory .
       
     - name: Log in to Docker Hub
       run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
 
     - name: Push Docker image to Docker Hub
       run: |
-        docker tag <username>/bookstore-inventory:latest <username>/bookstore-inventory:v1
-        docker push <username>/bookstore-inventory:v1
+        docker tag roddbrian/bookstore-inventory:latest roddbrian/bookstore-inventory:v1
+        docker push roddbrian/bookstore-inventory:v1
